@@ -54,12 +54,29 @@ class MainActivity : AppCompatActivity() {
 
     private fun showItemsMenu() {
         menuList.clear()
-        for (i in 1..6) {
-            val items = ItemsMenu(
-                R.drawable.ic_launcher_foreground, "Android $i"
-            )
 
-            menuList.add(items)
-        }
+        val items1 = ItemsMenu(R.drawable.ic_baseline_add_shopping_cart_24, "Cart")
+
+        menuList.add(items1)
+
+        val items2 = ItemsMenu(R.drawable.ic_baseline_location_on_24, "Location")
+
+        menuList.add(items2)
+
+        val items3 = ItemsMenu(R.drawable.ic_baseline_mail_outline_24, "Inbox")
+
+        menuList.add(items3)
+
+        val items4 = ItemsMenu(R.drawable.ic_baseline_settings_24, "Setting")
+
+        menuList.add(items4)
+
+        val items5 = ItemsMenu(R.drawable.ic_baseline_star_outline_24, "Favorite")
+
+        menuList.add(items5)
+
+        val items6 = ItemsMenu(R.drawable.ic_baseline_logout_24, "Logout")
+
+        menuList.add(items6)
     }
 }

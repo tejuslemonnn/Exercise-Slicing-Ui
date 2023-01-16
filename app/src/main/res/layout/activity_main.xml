@@ -8,6 +8,47 @@
     android:backgroundTint="#183D83"
     tools:context=".MainActivity">
 
+    <View
+        android:id="@+id/anchor_view_header"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/circle_background_header1"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:adjustViewBounds="true"
+        android:alpha="0.05"
+        android:contentDescription="circle_background"
+        android:scaleType="centerInside"
+        android:src="@drawable/circle_white"
+        app:layout_constraintBottom_toBottomOf="@id/anchor_view_header"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="@id/anchor_view_header"
+        app:layout_constraintRight_toRightOf="@id/anchor_view_header"
+        app:layout_constraintTop_toTopOf="@id/anchor_view_header"
+        app:layout_constraintVertical_bias="3.5" />
+
+    <ImageView
+        android:id="@+id/circle_background_header2"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:adjustViewBounds="true"
+        android:alpha="0.05"
+        android:contentDescription="circle_background"
+        android:scaleType="centerInside"
+        android:src="@drawable/circle_white"
+        app:layout_constraintBottom_toBottomOf="@id/anchor_view_header"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@id/anchor_view_header"
+        app:layout_constraintRight_toRightOf="@id/anchor_view_header"
+        app:layout_constraintTop_toTopOf="@id/anchor_view_header"
+        app:layout_constraintVertical_bias="2" />
+
     <androidx.cardview.widget.CardView
         android:id="@+id/thumbnail_card"
         android:layout_width="100dp"
